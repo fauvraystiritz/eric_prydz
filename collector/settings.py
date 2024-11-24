@@ -12,6 +12,14 @@ BOT_NAME = "collector"
 SPIDER_MODULES = ["collector.spiders"]
 NEWSPIDER_MODULE = "collector.spiders"
 
+FEEDS = {
+    'raw_data/tracklists.json': {
+        'format': 'json',
+        'encoding': 'utf8',
+        'indent': 2,
+        'overwrite': True,
+    },
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "collector (+http://www.yourdomain.com)"

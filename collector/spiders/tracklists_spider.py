@@ -1,12 +1,39 @@
 import scrapy
+from pathlib import Path
 
 class TracklistsSpider(scrapy.Spider):
     name = 'prydz_tracklists'
-    start_urls = [
-        'https://www.1001tracklists.com/tracklist/2szbt321/eric-prydz-tsunami-stage-seismic-dance-event-united-states-2024-11-17.html'
-    ]
+    allowed_domains = ['1001tracklists.com']
+    
+    def start_requests(self):
+        search_url = 'https://www.1001tracklists.com/dj/ericprydz/index.html'
+        
+        yield scrapy.Request(
+            url=search_url,
+            headers=self.get_headers(),
+            callback=self.parse_search_results
+        )
 
-    def parse(self, response):
+    def parse_search_results(self, response):
+        tracklist_divs = response.css('div.bItm.action.oItm')
+        self.logger.info(f"Found {len(tracklist_divs)} tracklist divs")
+        
+        for div in tracklist_divs:  # Removed the [:2] limit since it's working well
+            onclick = div.attrib.get('onclick', '')
+            url_match = onclick.split("'")[1] if "'" in onclick else None
+            
+            if url_match:
+                full_url = f'https://www.1001tracklists.com{url_match}'
+                title = div.css('div.bTitle a::text').get()
+                self.logger.info(f"Processing tracklist: {title}")
+                
+                yield scrapy.Request(
+                    url=full_url,
+                    callback=self.parse_tracklist,
+                    headers=self.get_headers()
+                )
+
+    def parse_tracklist(self, response):
         event_name = response.css('meta[property="og:title"]::attr(content)').get()
         
         tracks = []
@@ -20,9 +47,7 @@ class TracklistsSpider(scrapy.Spider):
                 continue
             track_numbers.add(track_number)
             
-            # Check if this is a component track using data-mashpos attribute
             is_mashup_element = 'data-mashpos' in track_div.attrib
-            
             played_together = track_div.css(f'span#tlp{track_index}_tracknumber_value[title="played together with previous track"]::attr(title)').get()
             
             track_data = {
@@ -35,13 +60,6 @@ class TracklistsSpider(scrapy.Spider):
                 'track_number': track_number
             }
             
-            # Debug print
-            print(f"\nTrack {track_index}:")
-            print(f"Title: {track_data['title']}")
-            print(f"Is component: {is_mashup_element}")
-            print(f"Attributes: {track_div.attrib}")
-            
-            # Clean up the data
             track_data = {k: v.strip() if isinstance(v, str) and k not in ['played_together', 'is_mashup_element', 'track_number'] else v 
                          for k, v in track_data.items() if v is not None}
             
@@ -54,11 +72,9 @@ class TracklistsSpider(scrapy.Spider):
             'tracks': tracks
         }
 
-    def start_requests(self):
-        headers = {
+    def get_headers(self):
+        return {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Language': 'en-US,en;q=0.5',
         }
-        for url in self.start_urls:
-            yield scrapy.Request(url=url, headers=headers, callback=self.parse)
