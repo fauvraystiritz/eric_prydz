@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Set Python version for the project
-pyenv local 3.11
-
 # Install dependencies using Poetry
 poetry install
 
