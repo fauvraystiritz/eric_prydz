@@ -4,7 +4,7 @@
 poetry install
 
 # Initialize Scrapy project
-poetry run scrapy startproject collector .
+python -m scrapy startproject collector .
 
 # Create .env file if it doesn't exist
 if [ ! -f ".env" ]; then
@@ -15,4 +15,4 @@ DB_HOST=localhost" > .env
     echo "Created .env file - please update with your actual credentials"
 fi
 
-echo "Setup complete! Use 'poetry shell' to activate the virtual environment"
+echo "Setup complete!"

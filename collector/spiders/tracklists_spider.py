@@ -18,7 +18,7 @@ class TracklistsSpider(scrapy.Spider):
         tracklist_divs = response.css('div.bItm.action.oItm')
         self.logger.info(f"Found {len(tracklist_divs)} tracklist divs")
         
-        for div in tracklist_divs:  # Removed the [:2] limit since it's working well
+        for div in tracklist_divs[:100]:  # Removed the [:2] limit since it's working well
             onclick = div.attrib.get('onclick', '')
             url_match = onclick.split("'")[1] if "'" in onclick else None
             
