@@ -4,6 +4,18 @@ from pathlib import Path
 class TracklistsSpider(scrapy.Spider):
     name = 'prydz_tracklists'
     allowed_domains = ['1001tracklists.com']
+
+    # Add delay settings
+    custom_settings = {
+        'DOWNLOAD_DELAY': 2,  # 2 second delay between requests
+        'RANDOMIZE_DOWNLOAD_DELAY': True,  # Randomize the delay
+        'CONCURRENT_REQUESTS': 1,  # Only make one request at a time
+        'RETRY_TIMES': 3,  # Retry failed requests up to 3 times
+        'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408],
+    }
+
+    def errback_httpbin(self, failure):
+        self.logger.error(f"Request failed: {failure.value}")
     
     def start_requests(self):
         search_url = 'https://www.1001tracklists.com/dj/ericprydz/index.html'
@@ -11,14 +23,27 @@ class TracklistsSpider(scrapy.Spider):
         yield scrapy.Request(
             url=search_url,
             headers=self.get_headers(),
-            callback=self.parse_search_results
+            callback=self.parse_search_results,
+            errback=self.errback_httpbin,
+            dont_filter=True
         )
 
     def parse_search_results(self, response):
+        # First, let's debug what we're getting
+        self.logger.info(f"Response status: {response.status}")
+        self.logger.info(f"Response URL: {response.url}")
+    
+        # Let's see what HTML we're getting
+        with open('debug.html', 'w') as f:
+            f.write(response.text)
+
         tracklist_divs = response.css('div.bItm.action.oItm')
         self.logger.info(f"Found {len(tracklist_divs)} tracklist divs")
+
+        # Debug the HTML structure
+        self.logger.info(f"First 500 chars of response: {response.text[:500]}")
         
-        for div in tracklist_divs[:100]:  # Removed the [:2] limit since it's working well
+        for div in tracklist_divs[:50]:  # Removed the [:2] limit since it's working well
             onclick = div.attrib.get('onclick', '')
             url_match = onclick.split("'")[1] if "'" in onclick else None
             
@@ -30,11 +55,18 @@ class TracklistsSpider(scrapy.Spider):
                 yield scrapy.Request(
                     url=full_url,
                     callback=self.parse_tracklist,
-                    headers=self.get_headers()
+                    errback=self.errback_httpbin,
+                    headers=self.get_headers(),
+                    dont_filter=True,
+                    meta={'title': title}
                 )
 
     def parse_tracklist(self, response):
         event_name = response.css('meta[property="og:title"]::attr(content)').get()
+
+        # Add logging for debugging
+        self.logger.info(f"Parsing tracklist: {event_name}")
+        self.logger.info(f"URL: {response.url}")
         
         tracks = []
         track_numbers = set()
@@ -66,15 +98,25 @@ class TracklistsSpider(scrapy.Spider):
             if track_data:
                 tracks.append(track_data)
 
-        yield {
+        result = {
             'event': event_name,
             'url': response.url,
             'tracks': tracks
         }
+        
+        self.logger.info(f"Successfully parsed {len(tracks)} tracks from {event_name}")
+        yield result
 
     def get_headers(self):
         return {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'none',
+            'Sec-Fetch-User': '?1',
         }
