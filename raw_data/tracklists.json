@@ -1,79 +1,17 @@
+[]
 [
 {
-  "event": "Eric Prydz @ HOLO, Expo City Arena, Dubai, United Arab Emirates 2024-10-18",
-  "url": "https://www.1001tracklists.com/tracklist/1d8nxrxk/eric-prydz-holo-expo-city-arena-dubai-united-arab-emirates-2024-10-18.html",
+  "event": "Eric Prydz @ Tsunami Stage, Seismic Dance Event, United States 2024-11-17",
+  "url": "https://www.1001tracklists.com/tracklist/2szbt321/eric-prydz-tsunami-stage-seismic-dance-event-united-states-2024-11-17.html",
   "tracks": [
-    {
-      "title": "Pryda - Welcome To My House (Acappella)",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205174"
-    },
     {
       "title": "Cirez D - Aperture",
       "artist": [
         "Cirez D"
       ],
-      "played_together": true,
-      "is_mashup_element": false,
-      "track_number": "_11205175"
-    },
-    {
-      "title": "Pryda - EDC Mexico 2023 ID (Working Title)",
-      "artist": [
-        "Pryda"
-      ],
       "played_together": false,
       "is_mashup_element": false,
-      "track_number": "_11205176"
-    },
-    {
-      "title": "Cirez D - Marquee Las Vegas 2017 ID (Working Title)",
-      "artist": [
-        "Cirez D"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205177"
-    },
-    {
-      "title": "Cirez D - Dare U",
-      "artist": [
-        "Cirez D"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205178"
-    },
-    {
-      "title": "Cirez D - Envelopes",
-      "artist": [
-        "Cirez D"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205179"
-    },
-    {
-      "title": "Eric Prydz - Trubble",
-      "artist": [
-        "Eric Prydz"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205180"
-    },
-    {
-      "title": "Pryda - Tomorrowland 2018 ID 01 (Working Title)",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205181"
+      "track_number": "_11329634"
     },
     {
       "title": "Pryda - Creamfields South 2023 Intro ID (Working Title)",
@@ -82,160 +20,151 @@
       ],
       "played_together": false,
       "is_mashup_element": false,
-      "track_number": "_11205182"
+      "track_number": "_11329635"
     },
     {
-      "title": "The Indicators - We Are The Indicators",
-      "artist": [
-        "The Indicators"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205183"
-    },
-    {
-      "title": "Pryda - Juletider",
+      "title": "Pryda - Phantom Paris 2023 ID (Working Title)",
       "artist": [
         "Pryda"
       ],
       "played_together": false,
       "is_mashup_element": false,
-      "track_number": "_11205184"
+      "track_number": "_11329636"
     },
     {
-      "title": "Pryda - The Return",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205185"
-    },
-    {
-      "title": "Pryda - CELL Hi Ibiza 2024 ID 01 (Working Title)",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205186"
-    },
-    {
-      "title": "Pryda - Power Drive (EPIC 2.0 Bauerpost Edit)",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205187"
-    },
-    {
-      "title": "Cirez D - Mokba",
+      "title": "Cirez D - Womb Tokyo 2023 ID 01 (Working Title)",
       "artist": [
         "Cirez D"
       ],
-      "played_together": true,
+      "played_together": false,
       "is_mashup_element": false,
-      "track_number": "_11205188"
+      "track_number": "_11329637"
     },
     {
-      "title": "Eric Prydz vs. Pink Floyd - Proper Education",
+      "title": "Stylo & Space Motion vs. Dosem vs. Green Velvet - Player vs. Chase The Link vs. Flash (Eric Prydz Mashup)",
       "artist": [
-        "Eric Prydz vs. Pink Floyd"
+        "Stylo & Space Motion vs. Dosem vs. Green Velvet"
       ],
       "played_together": false,
       "is_mashup_element": false,
-      "track_number": "_11205189"
+      "track_number": "_11329638"
     },
     {
-      "title": "Pryda - Echostage 2019 ID (Working Title)",
+      "title": "Green Velvet - Flash (Acappella)",
       "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205190"
-    },
-    {
-      "title": "Pryda - Viro (Eric Prydz Intro Edit)",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": true,
-      "is_mashup_element": false,
-      "track_number": "_11205191"
-    },
-    {
-      "title": "Eric Prydz - Pjanoo (Eric's Intro Edit)",
-      "artist": [
-        "Eric Prydz"
-      ],
-      "played_together": true,
-      "is_mashup_element": false,
-      "track_number": "_11205192"
-    },
-    {
-      "title": "Pryda - Viro",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": true,
-      "is_mashup_element": false,
-      "track_number": "_11205193"
-    },
-    {
-      "title": "Pryda - Allein",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205194"
-    },
-    {
-      "title": "Pryda - One Day",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205195"
-    },
-    {
-      "title": "Eric Prydz vs. Underworld - Two Months Off 2Night (Eric Prydz Bootleg)",
-      "artist": [
-        "Eric Prydz vs. Underworld"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11205196"
-    },
-    {
-      "title": "Underworld - 2 Months Off",
-      "artist": [
-        "Underworld"
+        "Green Velvet"
       ],
       "played_together": false,
       "is_mashup_element": true,
-      "track_number": "_23"
+      "track_number": "_5"
     },
     {
-      "title": "Eric Prydz - 2night",
+      "title": "Dosem - Chase The Link",
       "artist": [
-        "Eric Prydz"
+        "Dosem"
       ],
       "played_together": false,
       "is_mashup_element": true,
-      "track_number": "_24"
+      "track_number": "_6"
     },
     {
-      "title": "Eric Prydz - Every Day",
+      "title": "Stylo & Space Motion - Player",
       "artist": [
-        "Eric Prydz"
+        "Stylo & Space Motion"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_7"
+    },
+    {
+      "title": "Jeremy Olander - Evade",
+      "artist": [
+        "Jeremy Olander"
       ],
       "played_together": false,
       "is_mashup_element": false,
-      "track_number": "_11205197"
+      "track_number": "_11329639"
+    },
+    {
+      "title": "Pryda - Glimma",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11329640"
+    },
+    {
+      "title": "Thomas Gold & Francesco Diaz & Young Rebels - Don't You Want Me (Dave Spoon Remix)",
+      "artist": [
+        "Thomas Gold & Francesco Diaz & Young Rebels"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11329641"
+    },
+    {
+      "title": "Pryda - INOX 2009 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11329642"
+    },
+    {
+      "title": "New Order & Eric Prydz vs. Daft Punk - Blue Monday vs. Harder, Better, Faster, Stronger (Eric Prydz Mashup)",
+      "artist": [
+        "New Order & Eric Prydz vs. Daft Punk"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11329643"
+    },
+    {
+      "title": "New Order - Blue Monday (Eric Prydz Remix)",
+      "artist": [
+        "New Order"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_13"
+    },
+    {
+      "title": "Daft Punk - Harder Better Faster Stronger (Eric Prydz Remix)",
+      "artist": [
+        "Daft Punk"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_14"
+    },
+    {
+      "title": "Pryda - Tomorrowland 2019 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11329644"
+    },
+    {
+      "title": "Pryda - Terminal 5",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11329645"
+    },
+    {
+      "title": "Sailor & I - Turn Around (Eric Prydz Private Remix)",
+      "artist": [
+        "Sailor & I"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11329646"
     },
     {
       "title": "Eric Prydz ft. Tom Cane - Generate (EPIC Interlude Mix)",
@@ -244,16 +173,25 @@
       ],
       "played_together": false,
       "is_mashup_element": false,
-      "track_number": "_11205198"
+      "track_number": "_11329647"
+    },
+    {
+      "title": "Pryda - Project Prayer",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11329648"
     },
     {
       "title": "Eric Prydz - Opus",
       "artist": [
         "Eric Prydz"
       ],
-      "played_together": true,
+      "played_together": false,
       "is_mashup_element": false,
-      "track_number": "_11205199"
+      "track_number": "_11329649"
     }
   ]
 },
@@ -1628,17 +1566,1034 @@
 {
   "event": "Eric Prydz @ HOLO, MedPlus Coliseum Bogotá, Colombia 2024-10-05",
   "url": "https://www.1001tracklists.com/tracklist/2c01j661/eric-prydz-holo-medplus-coliseum-bogota-colombia-2024-10-05.html",
-  "tracks": []
+  "tracks": [
+    {
+      "title": "Pryda - Welcome To My House (Acappella)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137601"
+    },
+    {
+      "title": "Cirez D - Aperture",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11137602"
+    },
+    {
+      "title": "Pryda - EDC Mexico 2023 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137603"
+    },
+    {
+      "title": "Cirez D - Marquee Las Vegas 2017 ID (Working Title)",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137604"
+    },
+    {
+      "title": "Cirez D - Dare U",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137605"
+    },
+    {
+      "title": "Cirez D - Envelopes",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137606"
+    },
+    {
+      "title": "Eric Prydz - Trubble",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137607"
+    },
+    {
+      "title": "Pryda - Tomorrowland 2018 ID 01 (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137608"
+    },
+    {
+      "title": "Pryda - Creamfields South 2023 Intro ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137609"
+    },
+    {
+      "title": "The Indicators - We Are The Indicators",
+      "artist": [
+        "The Indicators"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137610"
+    },
+    {
+      "title": "Pryda - Juletider",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137611"
+    },
+    {
+      "title": "Pryda - The Return",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137612"
+    },
+    {
+      "title": "Pryda - CELL Hi Ibiza 2024 ID 01 (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137613"
+    },
+    {
+      "title": "Pryda - Power Drive (EPIC 2.0 Bauerpost Edit)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137614"
+    },
+    {
+      "title": "Cirez D - Mokba",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11137615"
+    },
+    {
+      "title": "Eric Prydz vs. Pink Floyd - Proper Education",
+      "artist": [
+        "Eric Prydz vs. Pink Floyd"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137616"
+    },
+    {
+      "title": "Pryda - Echostage 2019 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137617"
+    },
+    {
+      "title": "Pryda - Viro (Eric Prydz Intro Edit)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11137618"
+    },
+    {
+      "title": "Eric Prydz - Pjanoo (Eric's Intro Edit)",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11137619"
+    },
+    {
+      "title": "Pryda - Viro",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11137620"
+    },
+    {
+      "title": "Pryda - Allein",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137621"
+    },
+    {
+      "title": "Pryda - One Day",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137622"
+    },
+    {
+      "title": "Eric Prydz vs. Underworld - Two Months Off 2Night (Eric Prydz Bootleg)",
+      "artist": [
+        "Eric Prydz vs. Underworld"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137623"
+    },
+    {
+      "title": "Underworld - 2 Months Off",
+      "artist": [
+        "Underworld"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_23"
+    },
+    {
+      "title": "Eric Prydz - 2night",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_24"
+    },
+    {
+      "title": "Eric Prydz - Every Day",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11139061"
+    },
+    {
+      "title": "Eric Prydz ft. Tom Cane - Generate (EPIC Interlude Mix)",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11137624"
+    },
+    {
+      "title": "Eric Prydz - Opus",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11137625"
+    }
+  ]
 },
 {
   "event": "Eric Prydz @ HOLO, Movistar Arena Santiago, Chile 2024-10-10",
   "url": "https://www.1001tracklists.com/tracklist/y9l9xf1/eric-prydz-holo-movistar-arena-santiago-chile-2024-10-10.html",
-  "tracks": []
+  "tracks": [
+    {
+      "title": "Pryda - Welcome To My House (Acappella)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168896"
+    },
+    {
+      "title": "Cirez D - Aperture",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11168897"
+    },
+    {
+      "title": "Pryda - EDC Mexico 2023 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168898"
+    },
+    {
+      "title": "Cirez D - Marquee Las Vegas 2017 ID (Working Title)",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168899"
+    },
+    {
+      "title": "Cirez D - Dare U",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168900"
+    },
+    {
+      "title": "Cirez D - Envelopes",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168901"
+    },
+    {
+      "title": "Eric Prydz - Trubble",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168902"
+    },
+    {
+      "title": "Pryda - Tomorrowland 2018 ID 01 (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168903"
+    },
+    {
+      "title": "Pryda - Creamfields South 2023 Intro ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168904"
+    },
+    {
+      "title": "The Indicators - We Are The Indicators",
+      "artist": [
+        "The Indicators"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168905"
+    },
+    {
+      "title": "Pryda - Juletider",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168906"
+    },
+    {
+      "title": "Pryda - The Return",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168907"
+    },
+    {
+      "title": "Pryda - CELL Hi Ibiza 2024 ID 01 (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168908"
+    },
+    {
+      "title": "Pryda - Power Drive (EPIC 2.0 Bauerpost Edit)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168909"
+    },
+    {
+      "title": "Cirez D - Mokba",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11168910"
+    },
+    {
+      "title": "Eric Prydz vs. Pink Floyd - Proper Education",
+      "artist": [
+        "Eric Prydz vs. Pink Floyd"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168911"
+    },
+    {
+      "title": "Pryda - Echostage 2019 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168912"
+    },
+    {
+      "title": "Pryda - Viro (Eric Prydz Intro Edit)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11168913"
+    },
+    {
+      "title": "Eric Prydz - Pjanoo (Eric's Intro Edit)",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11168914"
+    },
+    {
+      "title": "Pryda - Viro",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11168915"
+    },
+    {
+      "title": "Pryda - Allein",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168916"
+    },
+    {
+      "title": "Pryda - One Day",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168917"
+    },
+    {
+      "title": "Eric Prydz vs. Underworld - Two Months Off 2Night (Eric Prydz Bootleg)",
+      "artist": [
+        "Eric Prydz vs. Underworld"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168918"
+    },
+    {
+      "title": "Underworld - 2 Months Off",
+      "artist": [
+        "Underworld"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_23"
+    },
+    {
+      "title": "Eric Prydz - 2night",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_24"
+    },
+    {
+      "title": "Eric Prydz - Every Day",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168919"
+    },
+    {
+      "title": "Eric Prydz ft. Tom Cane - Generate (EPIC Interlude Mix)",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11168920"
+    },
+    {
+      "title": "Eric Prydz - Opus",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11168921"
+    }
+  ]
 },
 {
   "event": "Eric Prydz @ HOLO, Movistar Arena Buenos Aires, Argentina 2024-10-12",
   "url": "https://www.1001tracklists.com/tracklist/19h6twdt/eric-prydz-holo-movistar-arena-buenos-aires-argentina-2024-10-12.html",
-  "tracks": []
+  "tracks": [
+    {
+      "title": "Pryda - Welcome To My House (Acappella)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178879"
+    },
+    {
+      "title": "Cirez D - Aperture",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11178880"
+    },
+    {
+      "title": "Pryda - EDC Mexico 2023 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178881"
+    },
+    {
+      "title": "Cirez D - Marquee Las Vegas 2017 ID (Working Title)",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178882"
+    },
+    {
+      "title": "Cirez D - Dare U",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178883"
+    },
+    {
+      "title": "Cirez D - Envelopes",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178884"
+    },
+    {
+      "title": "Eric Prydz - Trubble",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178885"
+    },
+    {
+      "title": "Pryda - Tomorrowland 2018 ID 01 (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178886"
+    },
+    {
+      "title": "Pryda - Creamfields South 2023 Intro ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178887"
+    },
+    {
+      "title": "The Indicators - We Are The Indicators",
+      "artist": [
+        "The Indicators"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178888"
+    },
+    {
+      "title": "Pryda - Juletider",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178889"
+    },
+    {
+      "title": "Pryda - The Return",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178890"
+    },
+    {
+      "title": "Pryda - CELL Hi Ibiza 2024 ID 01 (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178891"
+    },
+    {
+      "title": "Pryda - Power Drive (EPIC 2.0 Bauerpost Edit)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178892"
+    },
+    {
+      "title": "Cirez D - Mokba",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11178893"
+    },
+    {
+      "title": "Eric Prydz vs. Pink Floyd - Proper Education",
+      "artist": [
+        "Eric Prydz vs. Pink Floyd"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178894"
+    },
+    {
+      "title": "Pryda - Echostage 2019 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178895"
+    },
+    {
+      "title": "Pryda - Viro (Eric Prydz Intro Edit)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11178896"
+    },
+    {
+      "title": "Eric Prydz - Pjanoo (Eric's Intro Edit)",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11178897"
+    },
+    {
+      "title": "Pryda - Viro",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11178898"
+    },
+    {
+      "title": "Pryda - Allein",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178899"
+    },
+    {
+      "title": "Pryda - One Day",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178900"
+    },
+    {
+      "title": "Eric Prydz vs. Underworld - Two Months Off 2Night (Eric Prydz Bootleg)",
+      "artist": [
+        "Eric Prydz vs. Underworld"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178901"
+    },
+    {
+      "title": "Underworld - 2 Months Off",
+      "artist": [
+        "Underworld"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_23"
+    },
+    {
+      "title": "Eric Prydz - 2night",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_24"
+    },
+    {
+      "title": "Eric Prydz - Every Day",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178902"
+    },
+    {
+      "title": "Eric Prydz ft. Tom Cane - Generate (EPIC Interlude Mix)",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11178903"
+    },
+    {
+      "title": "Eric Prydz - Opus",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11178904"
+    }
+  ]
+},
+{
+  "event": "Eric Prydz @ HOLO, Expo City Arena, Dubai, United Arab Emirates 2024-10-18",
+  "url": "https://www.1001tracklists.com/tracklist/1d8nxrxk/eric-prydz-holo-expo-city-arena-dubai-united-arab-emirates-2024-10-18.html",
+  "tracks": [
+    {
+      "title": "Pryda - Welcome To My House (Acappella)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205174"
+    },
+    {
+      "title": "Cirez D - Aperture",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11205175"
+    },
+    {
+      "title": "Pryda - EDC Mexico 2023 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205176"
+    },
+    {
+      "title": "Cirez D - Marquee Las Vegas 2017 ID (Working Title)",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205177"
+    },
+    {
+      "title": "Cirez D - Dare U",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205178"
+    },
+    {
+      "title": "Cirez D - Envelopes",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205179"
+    },
+    {
+      "title": "Eric Prydz - Trubble",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205180"
+    },
+    {
+      "title": "Pryda - Tomorrowland 2018 ID 01 (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205181"
+    },
+    {
+      "title": "Pryda - Creamfields South 2023 Intro ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205182"
+    },
+    {
+      "title": "The Indicators - We Are The Indicators",
+      "artist": [
+        "The Indicators"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205183"
+    },
+    {
+      "title": "Pryda - Juletider",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205184"
+    },
+    {
+      "title": "Pryda - The Return",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205185"
+    },
+    {
+      "title": "Pryda - CELL Hi Ibiza 2024 ID 01 (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205186"
+    },
+    {
+      "title": "Pryda - Power Drive (EPIC 2.0 Bauerpost Edit)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205187"
+    },
+    {
+      "title": "Cirez D - Mokba",
+      "artist": [
+        "Cirez D"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11205188"
+    },
+    {
+      "title": "Eric Prydz vs. Pink Floyd - Proper Education",
+      "artist": [
+        "Eric Prydz vs. Pink Floyd"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205189"
+    },
+    {
+      "title": "Pryda - Echostage 2019 ID (Working Title)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205190"
+    },
+    {
+      "title": "Pryda - Viro (Eric Prydz Intro Edit)",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11205191"
+    },
+    {
+      "title": "Eric Prydz - Pjanoo (Eric's Intro Edit)",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11205192"
+    },
+    {
+      "title": "Pryda - Viro",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11205193"
+    },
+    {
+      "title": "Pryda - Allein",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205194"
+    },
+    {
+      "title": "Pryda - One Day",
+      "artist": [
+        "Pryda"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205195"
+    },
+    {
+      "title": "Eric Prydz vs. Underworld - Two Months Off 2Night (Eric Prydz Bootleg)",
+      "artist": [
+        "Eric Prydz vs. Underworld"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205196"
+    },
+    {
+      "title": "Underworld - 2 Months Off",
+      "artist": [
+        "Underworld"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_23"
+    },
+    {
+      "title": "Eric Prydz - 2night",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": true,
+      "track_number": "_24"
+    },
+    {
+      "title": "Eric Prydz - Every Day",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205197"
+    },
+    {
+      "title": "Eric Prydz ft. Tom Cane - Generate (EPIC Interlude Mix)",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": false,
+      "is_mashup_element": false,
+      "track_number": "_11205198"
+    },
+    {
+      "title": "Eric Prydz - Opus",
+      "artist": [
+        "Eric Prydz"
+      ],
+      "played_together": true,
+      "is_mashup_element": false,
+      "track_number": "_11205199"
+    }
+  ]
 },
 {
   "event": "Eric Prydz @ Super Unnatural, WestWorld Scottsdale, United States 2024-11-01",
@@ -2417,201 +3372,6 @@
       "played_together": false,
       "is_mashup_element": false,
       "track_number": "_11327193"
-    }
-  ]
-},
-{
-  "event": "Eric Prydz @ Tsunami Stage, Seismic Dance Event, United States 2024-11-17",
-  "url": "https://www.1001tracklists.com/tracklist/2szbt321/eric-prydz-tsunami-stage-seismic-dance-event-united-states-2024-11-17.html",
-  "tracks": [
-    {
-      "title": "Cirez D - Aperture",
-      "artist": [
-        "Cirez D"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329634"
-    },
-    {
-      "title": "Pryda - Creamfields South 2023 Intro ID (Working Title)",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329635"
-    },
-    {
-      "title": "Pryda - Phantom Paris 2023 ID (Working Title)",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329636"
-    },
-    {
-      "title": "Cirez D - Womb Tokyo 2023 ID 01 (Working Title)",
-      "artist": [
-        "Cirez D"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329637"
-    },
-    {
-      "title": "Stylo & Space Motion vs. Dosem vs. Green Velvet - Player vs. Chase The Link vs. Flash (Eric Prydz Mashup)",
-      "artist": [
-        "Stylo & Space Motion vs. Dosem vs. Green Velvet"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329638"
-    },
-    {
-      "title": "Green Velvet - Flash (Acappella)",
-      "artist": [
-        "Green Velvet"
-      ],
-      "played_together": false,
-      "is_mashup_element": true,
-      "track_number": "_5"
-    },
-    {
-      "title": "Dosem - Chase The Link",
-      "artist": [
-        "Dosem"
-      ],
-      "played_together": false,
-      "is_mashup_element": true,
-      "track_number": "_6"
-    },
-    {
-      "title": "Stylo & Space Motion - Player",
-      "artist": [
-        "Stylo & Space Motion"
-      ],
-      "played_together": false,
-      "is_mashup_element": true,
-      "track_number": "_7"
-    },
-    {
-      "title": "Jeremy Olander - Evade",
-      "artist": [
-        "Jeremy Olander"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329639"
-    },
-    {
-      "title": "Pryda - Glimma",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329640"
-    },
-    {
-      "title": "Thomas Gold & Francesco Diaz & Young Rebels - Don't You Want Me (Dave Spoon Remix)",
-      "artist": [
-        "Thomas Gold & Francesco Diaz & Young Rebels"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329641"
-    },
-    {
-      "title": "Pryda - INOX 2009 ID (Working Title)",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329642"
-    },
-    {
-      "title": "New Order & Eric Prydz vs. Daft Punk - Blue Monday vs. Harder, Better, Faster, Stronger (Eric Prydz Mashup)",
-      "artist": [
-        "New Order & Eric Prydz vs. Daft Punk"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329643"
-    },
-    {
-      "title": "New Order - Blue Monday (Eric Prydz Remix)",
-      "artist": [
-        "New Order"
-      ],
-      "played_together": false,
-      "is_mashup_element": true,
-      "track_number": "_13"
-    },
-    {
-      "title": "Daft Punk - Harder Better Faster Stronger (Eric Prydz Remix)",
-      "artist": [
-        "Daft Punk"
-      ],
-      "played_together": false,
-      "is_mashup_element": true,
-      "track_number": "_14"
-    },
-    {
-      "title": "Pryda - Tomorrowland 2019 ID (Working Title)",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329644"
-    },
-    {
-      "title": "Pryda - Terminal 5",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329645"
-    },
-    {
-      "title": "Sailor & I - Turn Around (Eric Prydz Private Remix)",
-      "artist": [
-        "Sailor & I"
-      ],
-      "played_together": true,
-      "is_mashup_element": false,
-      "track_number": "_11329646"
-    },
-    {
-      "title": "Eric Prydz ft. Tom Cane - Generate (EPIC Interlude Mix)",
-      "artist": [
-        "Eric Prydz"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329647"
-    },
-    {
-      "title": "Pryda - Project Prayer",
-      "artist": [
-        "Pryda"
-      ],
-      "played_together": true,
-      "is_mashup_element": false,
-      "track_number": "_11329648"
-    },
-    {
-      "title": "Eric Prydz - Opus",
-      "artist": [
-        "Eric Prydz"
-      ],
-      "played_together": false,
-      "is_mashup_element": false,
-      "track_number": "_11329649"
     }
   ]
 }

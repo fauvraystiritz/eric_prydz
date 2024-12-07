@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# Install dependencies using Poetry
-poetry install
-
-# Initialize Scrapy project
-python -m scrapy startproject collector .
+# Install dependencies using Rye
+rye sync
 
 # Create .env file if it doesn't exist
 if [ ! -f ".env" ]; then
@@ -15,4 +12,4 @@ DB_HOST=localhost" > .env
     echo "Created .env file - please update with your actual credentials"
 fi
 
-echo "Setup complete!"
+echo "Setup complete! Use 'rye shell' to activate the virtual environment"

@@ -1,20 +1,34 @@
-[tool.poetry]
+[project]
 name = "eric-prydz-tracklists"
 version = "0.1.0"
 description = "Scrapes Eric Prydz tracklists from 1001tracklists"
-authors = ["Felix Auvray-Stiritz <felix.auvray.stiritz@gmail.com>"]
-package-mode = false
-
-[tool.poetry.dependencies]
-python = "^3.11"
-scrapy = "^2.11.0"
-python-dotenv = "^1.0.0"
-psycopg2-binary = "^2.9.9"
-
-[tool.poetry.group.dev.dependencies]
-black = "^23.11.0"
-isort = "^5.12.0"
+authors = [
+    { name = "Felix Auvray-Stiritz", email = "felix.auvray.stiritz@gmail.com" }
+]
+dependencies = [
+    "scrapy>=2.11.0",
+    "python-dotenv>=1.0.0",
+    "psycopg2-binary>=2.9.9",
+    "playwright>=1.49.0",
+    "selenium>=4.27.1",
+    "fake-useragent>=2.0.0",
+]
+readme = "README.MD"
+requires-python = ">= 3.11"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black>=23.11.0",
+    "isort>=5.12.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/eric_prydz"]

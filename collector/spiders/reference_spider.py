@@ -1,13 +1,12 @@
-import json
-import logging
-from pathlib import Path
 import scrapy
-
+from pathlib import Path
+import json
 
 class TracklistsSpider(scrapy.Spider):
-    name = 'prydz_tracklists'
+    name = 'stable_prydz_tracklists_spider'
     allowed_domains = ['1001tracklists.com']
 
+    # Add delay settings
     custom_settings = {
         'DOWNLOAD_DELAY': 2,  # 2 second delay between requests
         'RANDOMIZE_DOWNLOAD_DELAY': True,  # Randomize the delay
@@ -29,6 +28,7 @@ class TracklistsSpider(scrapy.Spider):
         super().__init__(*args, **kwargs)
         self.state_file = Path('raw_data/scrape_state.json')
         self.scraped_urls = self.load_state()
+        self.logger.info(f"Loaded {len(self.scraped_urls)} previously scraped URLs")
 
     def load_state(self):
         """Load the set of already scraped URLs."""
@@ -45,92 +45,91 @@ class TracklistsSpider(scrapy.Spider):
     def closed(self, reason):
         """Save state when spider closes."""
         self.save_state()
-
+    
     def errback_httpbin(self, failure):
         self.logger.error(f"Request failed: {failure.value}")
-        if hasattr(failure.value, 'response'):
-            response = failure.value.response
-            self.logger.error(f"Response status: {response.status}")
-            self.logger.error(f"Response headers: {response.headers}")
-            self.logger.error(f"Response body: {response.text[:500]}")
-
+    
     def start_requests(self):
+        search_url = 'https://www.1001tracklists.com/dj/ericprydz/index.html'
+        
         yield scrapy.Request(
-            url='https://www.1001tracklists.com/dj/ericprydz/index.html',
+            url=search_url,
+            headers=self.get_headers(),
             callback=self.parse_search_results,
             errback=self.errback_httpbin,
-            dont_filter=True,
-            headers=self.get_headers()
+            dont_filter=True
         )
 
     def parse_search_results(self, response):
-        # Save the HTML for debugging
-        with open('raw_data/debug.html', 'w') as f:
+        # First, let's debug what we're getting
+        self.logger.info(f"Response status: {response.status}")
+        self.logger.info(f"Response URL: {response.url}")
+    
+        # Let's see what HTML we're getting
+        with open('debug.html', 'w') as f:
             f.write(response.text)
 
-        # Find all tracklist divs
         tracklist_divs = response.css('div.bItm.action.oItm')
         self.logger.info(f"Found {len(tracklist_divs)} tracklist divs")
 
         new_tracklists_found = 0
-
+        
         for div in tracklist_divs:
             onclick = div.attrib.get('onclick', '')
             url_match = onclick.split("'")[1] if "'" in onclick else None
-
-            if not url_match:
-                continue
-
-            full_url = response.urljoin(url_match)
-
-            if full_url in self.scraped_urls:
-                self.logger.info(f"Skipping already scraped URL: {full_url}")
-                continue
-
-            new_tracklists_found += 1
-            self.scraped_urls.add(full_url)
-
-            title = div.css('div.bTitle a::text').get()
-            self.logger.info(f"Found new tracklist: {title}")
-
-            yield scrapy.Request(
-                url=full_url,
-                callback=self.parse_tracklist,
-                errback=self.errback_httpbin,
-                headers=self.get_headers(),
-                meta={'url': full_url, 'title': title}
-            )
-
+            
+            if url_match:
+                full_url = f'https://www.1001tracklists.com{url_match}'
+                
+                # Skip if already scraped
+                if full_url in self.scraped_urls:
+                    self.logger.info(f"Skipping already scraped URL: {full_url}")
+                    continue
+                
+                new_tracklists_found += 1
+                self.scraped_urls.add(full_url)
+                
+                title = div.css('div.bTitle a::text').get()
+                self.logger.info(f"Found new tracklist: {title}")
+                
+                yield scrapy.Request(
+                    url=full_url,
+                    callback=self.parse_tracklist,
+                    errback=self.errback_httpbin,
+                    headers=self.get_headers(),
+                    dont_filter=True,
+                    meta={'title': title}
+                )
+        
         # Save state after processing all tracklists
         self.save_state()
-
+        
         if new_tracklists_found == 0:
             self.logger.info("No new tracklists found")
         else:
             self.logger.info(f"Found {new_tracklists_found} new tracklists")
 
     def parse_tracklist(self, response):
-        """Parse an individual tracklist page."""
         event_name = response.css('meta[property="og:title"]::attr(content)').get()
 
         # Add logging for debugging
         self.logger.info(f"Parsing tracklist: {event_name}")
         self.logger.info(f"URL: {response.url}")
-
+        
         tracks = []
         track_numbers = set()
-
+        
         for track_div in response.css('div[id^="tlp"]:not([id$="_content"])'):
             track_number = track_div.attrib.get('id', '').replace('tlp', '')
             track_index = track_div.attrib.get('data-trno', '')
-
+            
             if track_number in track_numbers:
                 continue
             track_numbers.add(track_number)
-
+            
             is_mashup_element = 'data-mashpos' in track_div.attrib
             played_together = track_div.css(f'span#tlp{track_index}_tracknumber_value[title="played together with previous track"]::attr(title)').get()
-
+            
             track_data = {
                 'title': track_div.css('meta[itemprop="name"]::attr(content)').get(),
                 'time': track_div.css('.cueValueField::text').get(),
@@ -140,10 +139,10 @@ class TracklistsSpider(scrapy.Spider):
                 'is_mashup_element': is_mashup_element,
                 'track_number': track_number
             }
-
-            track_data = {k: v.strip() if isinstance(v, str) and k not in ['played_together', 'is_mashup_element', 'track_number'] else v
+            
+            track_data = {k: v.strip() if isinstance(v, str) and k not in ['played_together', 'is_mashup_element', 'track_number'] else v 
                          for k, v in track_data.items() if v is not None}
-
+            
             if track_data:
                 tracks.append(track_data)
 
@@ -152,7 +151,7 @@ class TracklistsSpider(scrapy.Spider):
             'url': response.url,
             'tracks': tracks
         }
-
+        
         self.logger.info(f"Successfully parsed {len(tracks)} tracks from {event_name}")
         yield result
 
@@ -168,6 +167,4 @@ class TracklistsSpider(scrapy.Spider):
             'Sec-Fetch-Mode': 'navigate',
             'Sec-Fetch-Site': 'none',
             'Sec-Fetch-User': '?1',
-            'Cache-Control': 'max-age=0',
-            'Referer': 'https://www.1001tracklists.com/dj/ericprydz/index.html',
         }
