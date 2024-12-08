@@ -12,6 +12,7 @@ dependencies = [
     "playwright>=1.49.0",
     "selenium>=4.27.1",
     "fake-useragent>=2.0.0",
+    "tqdm>=4.66.1",  # For progress bars
 ]
 readme = "README.MD"
 requires-python = ">= 3.11"
