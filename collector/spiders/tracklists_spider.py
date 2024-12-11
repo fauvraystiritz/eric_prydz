@@ -30,7 +30,14 @@ class TracklistsSpider:
                 json.dump([], f)
                 
         self.processed_urls = self.load_processed()
-        print(f"Already processed {len(self.processed_urls)} URLs")
+        
+        # Also load URLs from existing tracklists
+        existing_tracklists = self.load_existing_tracklists()
+        for tracklist in existing_tracklists:
+            if 'url' in tracklist:
+                self.processed_urls.add(tracklist['url'])
+        
+        print(f"Already processed {len(self.processed_urls)} URLs (from processed_urls.json and tracklists.json)")
     
     def load_processed(self) -> Set[str]:
         """Load the set of already processed URLs."""
@@ -125,29 +132,27 @@ class TracklistsSpider:
         """Wait for page to load with retries and fallbacks."""
         for attempt in range(max_retries):
             try:
-                # First try with networkidle
-                await page.goto(url, wait_until='networkidle', timeout=60000)
+                # Start with domcontentloaded instead of networkidle
+                await page.goto(url, wait_until='domcontentloaded', timeout=15000)
+                
+                # Wait for specific elements we need instead of networkidle
+                try:
+                    # Wait for either the title meta tag or tracklistTitle element
+                    await page.wait_for_selector('meta[property="og:title"], .tracklistTitle', timeout=10000)
+                    # Wait for track divs
+                    await page.wait_for_selector('div[id^="tlp"]:not([id$="_content"])', timeout=5000)
+                    return True
+                except Exception:
+                    pass
+                
                 return True
             except Exception as e:
-                print(f"\nTimeout on attempt {attempt + 1}/{max_retries} with networkidle")
-                try:
-                    # Fallback to domcontentloaded
-                    await page.goto(url, wait_until='domcontentloaded', timeout=30000)
-                    
-                    # Wait a bit for additional content
-                    try:
-                        await page.wait_for_load_state('networkidle', timeout=10000)
-                    except:
-                        pass
-                    
-                    return True
-                except Exception as e:
-                    print(f"Fallback also failed: {e}")
-                    if attempt == max_retries - 1:
-                        print("All retries failed")
-                        return False
-                    print("Retrying after delay...")
-                    await asyncio.sleep(5)
+                print(f"\nTimeout on attempt {attempt + 1}/{max_retries}")
+                if attempt == max_retries - 1:
+                    print("All retries failed")
+                    return False
+                print("Retrying after delay...")
+                await asyncio.sleep(2)
         return False
 
     async def parse_tracklist(self, page: Page, url: str) -> Optional[Dict]:
@@ -169,30 +174,29 @@ class TracklistsSpider:
                     print("Failed to load page after CAPTCHA")
                     return None
             
+            # Get event name - try both methods in parallel
+            title_meta = page.query_selector('meta[property="og:title"]')
+            title_el = page.query_selector('.tracklistTitle')
+            results = await asyncio.gather(title_meta, title_el)
+            
+            event_name = None
+            if results[0]:  # meta tag
+                event_name = await results[0].get_attribute('content')
+            elif results[1]:  # title element
+                event_name = await results[1].inner_text()
+            
+            if not event_name:
+                print("Error: Could not find event name")
+                return None
+            
+            print(f"Found event: {event_name}")
+            
             # Get page title
             title = await page.title()
             print(f"Page title: {title}")
             
             # Debug: Print page title
             print(f"Page title: {await page.title()}")
-            
-            # Get event name from meta tag
-            event_name = None
-            title_meta = await page.query_selector('meta[property="og:title"]')
-            if title_meta:
-                event_name = await title_meta.get_attribute('content')
-                print(f"Found event: {event_name}")
-            else:
-                print("Warning: Could not find event name meta tag")
-                # Try alternate method
-                title_el = await page.query_selector('.tracklistTitle')
-                if title_el:
-                    event_name = await title_el.inner_text()
-                    print(f"Found event from title element: {event_name}")
-            
-            if not event_name:
-                print("Error: Could not find event name")
-                return None
             
             tracks = []
             track_numbers = set()
