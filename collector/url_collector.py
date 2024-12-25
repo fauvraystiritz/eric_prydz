@@ -149,7 +149,7 @@ async def main():
             
             print("Navigating to Eric Prydz's tracklists page...", flush=True)
             # Navigate to the page
-            await page.goto('https://www.1001tracklists.com/dj/ericprydz/index.html', wait_until='networkidle')
+            await page.goto('https://www.1001tracklists.com/dj/pryda/index.html', wait_until='networkidle')
             await asyncio.sleep(2)
             
             print("\nManual scrolling mode activated!", flush=True)
